@@ -1,7 +1,4 @@
 const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
-const saltRounds = 10;
-
 const Schema = mongoose.Schema;
 
 const movieSchema = new Schema({
@@ -17,4 +14,4 @@ const movieSchema = new Schema({
   },
 });
 
-module.exports = mongoose.model("User", userSchema);
+module.exports = mongoose.model("Movie", movieSchema);
